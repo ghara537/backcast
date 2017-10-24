@@ -1,8 +1,12 @@
 var SearchView = Backbone.View.extend({
-
+  
+  initialize: function(videos) {
+    this.render();
+  },
 
   render: function() {
-    this.$el.html(this.template());
+    var currentHTML = this.$el.html(this.template());
+    $('.search').html(currentHTML);
     return this;
   },
 

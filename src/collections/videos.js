@@ -7,7 +7,7 @@ var Videos = Backbone.Collection.extend({
     // });
 
     // this.add(exampleVideoData);
-    this.add(collection);
+    // this.add(collection);
   },
 
 });
