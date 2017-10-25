@@ -5,7 +5,7 @@ var VideoPlayerView = Backbone.View.extend({
 
   render: function(video) {
     if (video) { //rerender with single vide
-      console.log ('test', video);
+      // console.log ('test', video);
       var firstVid = video;
       var data = video.attributes;
       // console.log ('firstVid', firstVid)
@@ -18,7 +18,7 @@ var VideoPlayerView = Backbone.View.extend({
       // console.log('id', data.id ); //<%=data.id%>
       
     } else {  //initialize with a single video
-      console.log('multiview triggering');
+      // console.log('multiview triggering');
       //Assumes a single video input
       var firstVid = this.model;
       var data = this.model.attributes;

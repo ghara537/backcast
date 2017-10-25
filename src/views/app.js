@@ -14,14 +14,16 @@ var AppView = Backbone.View.extend({
     // console.log('video 1', this.videos.models[0]);
     // var videoPlayer = new VideoPlayerView({collection: this.videos}); //pass in a collection of videos
     // var videoPlayer = new VideoPlayerView({model: this.videos.models[0]}); //pass in a single video
-    console.log (this.videos.models[0]);
+    // console.log (this.videos.models[0]);
     var videoPlayer = new VideoPlayerView({model: this.videos.models[0]}); //pass in a single video
     var groupofVideos = new VideoListView({collection: this.videos});
     var searchBar = new SearchView ();
+    // var videos = new Videos({collection: this.videos});
+    // videos.search('hello');
     
     this.listenTo(this.videos, 'select', function (video) {
-      console.log('listener', video);
-      console.log ('video from listerner', video)
+      // console.log('listener', video);
+      // console.log ('video from listerner', video)
       videoPlayer.render(video);
       /// update the video player;
     });
